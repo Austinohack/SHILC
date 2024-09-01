@@ -68,35 +68,179 @@ b {
 
 
 /* Content Containers */
-.Event-img-container, .Outdoor-img-container, .RSC-img-container, .JSC-img-container, .ISC-img-container {
+.Event-img-container{
+    display: flex;
+    justify-content: space-around;
+
+}
+.Outdoor-img-container{
     display: flex;
     justify-content: space-around;
 }
 
-.Equipment-img-container, .Bowling-img-container, .Billiard-img-container, .Picnic-img-container, .History-img-container, .Student-img-container {
+#Contact{
+    text-align: center;
+    border: none;
+}
+input{
+    display: block;
+    border: none;
+    border-bottom: 2px gray solid;
+    width: 100%;
+    margin: 10px;
+}
+button{
+    color: white;
+    background-color: #16365b;
+    border: none;
+    padding: 5px;
+}
+
+button:hover{
+    color: black;
+    background-color: gray;
+}
+#About p{
+    text-align: center;
+}
+
+.Equipment-img-container{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
-.Equipment-img-container img, .Bowling-img-container img, .Billiard-img-container img, .Picnic-img-container img, .History-img-container img, .Student-img-container img {
+.Equipment-img-container img {
     width: 100%;
     padding-top: 5px;
 }
 
-/* Content Sections */
 .content-equipment {
     display: flex;
 }
 
-.content-equipment .content, .Equipment-img-container, .Bowling-img-container, .Billiard-img-container, .Picnic-img-container, .History-img-container, .Student-img-container {
+.content-equipment .content, .Equipment-img-container{
     flex: 1;
 }
 
-.content-equipment .content, .backward-content-equipment .backward-content {
+.content-equipment .content{
     margin-top: 40px;
     margin-left: 30px;
     font-size: 18px;
+}
+
+.Bowling-img-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Bowling-img-container img {
+    width: 100%;
+    padding-top: 5px;
+}
+
+.content-equipment {
+    display: flex;
+}
+
+.content-equipment .content, .Bowling-img-container{
+    flex: 1;
+}
+
+.Billiard-img-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Billiard-img-container img {
+    width: 100%;
+    padding-top: 5px;
+}
+
+.backward-content-equipment .backward-content, .Billiard-img-container{
+    flex: 1;
+}
+
+.backward-content-equipment {
+    display: flex;
+}
+
+.backward-content-equipment .backward-content{
+    margin-top: 40px;
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+.Picnic-img-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Picnic-img-container img {
+    width: 100%;
+    padding-top: 5px;
+}
+.content-equipment .content, .Picnic-img-container{
+    flex: 1;
+}
+.History-img-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.History-img-container img {
+    width: 100%;
+    padding-top: 5px;
+}
+
+.backward-content-equipment .backward-content, .History-img-container{
+    flex: 1;
+}
+
+.Student-img-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Student-img-container img {
+    width: 100%;
+    padding-top: 5px;
+}
+
+.backward-content-equipment .backward-content, .Student-img-container{
+    flex: 1;
+}
+
+.RSC-img-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+#RSC .content{
+    text-align: center;
+}
+
+.JSC-img-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+#JSC .content{
+    text-align: center;
+}
+
+.ISC-img-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+#ISC .content{
+    text-align: center;
 }
 
 /* Contact Section */
