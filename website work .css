@@ -15,6 +15,10 @@ body {
     background-color: #f4f4f4;
 }
 
+b {
+    color: black;
+}
+
 /* Navigation Bar */
 .nav {
     background-color: #16365b;
